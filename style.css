@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(imagens/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    max-width: 1440px;
+    max-height: 500px;
+    margin: 50px;
+}
+
+.container_cabecalho {
+    padding: 2px 30px 40px 0;
+    margin-top: -20px;
+}
+
+.container_conteudo {
+    display: flex;
+}
+
+.container_illustration .imagem_illustration  {
+    width: 100%;
+    animation: float 2s infinite ease-in-out;
+}
+
+.container_informacoes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 30px;
+    
+}
+
+.container_informacoes h1 {
+    color: aliceblue;
+    font-size: 30px;
+    max-width: 350px;
+    margin-top: 28px;
+}
+
+.container_informacoes p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(223, 225, 227);
+    max-width: 460px;
+}
+
+.container_informacoes button {
+    color: hsl(257, 40%, 49%);
+    font-size: 17px;
+    width: 10rem;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.container_conteudo button:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    background-color: rgb(224, 118, 224);
+}
+
+.container_botao ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.container_botao a {
+    padding-left: 20px;
+}
+
+.container_botao .botao {
+    width: 30px;
+    filter: invert(1);
+}
+
+.container_botao .botao:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
