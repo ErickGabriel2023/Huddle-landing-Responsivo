@@ -1,0 +1,114 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.fundo {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height: 150px;
+    padding-left: 30px;
+    padding-top: 30px; 
+}
+
+header .logo {
+    width: 200px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main .imagem_ilustrativa {
+    width: 100%;
+}
+
+main .conteudo_informativo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.conteudo_informativo h1 {
+    width: 450px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo_informativo p {
+    font-family: 'Open Sans', sans-serif;
+    width: 460px;
+    color: rgb(229, 229, 229);
+}
+
+.conteudo_informativo button {
+    width: 165px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.2);
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+}
+
+.conteudo_informativo button:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.07);
+}
+
+button:active {
+    background-color: hsl(300, 69%, 71%);
+    color: rgb(255, 255, 255);
+}
+
+.conteudo_redes_sociais {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    height: 220px;
+    margin-top: 30px;
+    width: 95vw;
+}
+
+.conteudo_redes_sociais ul {
+    display: flex;
+    gap: 30px;
+}
+
+.conteudo_redes_sociais li {
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;    
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.conteudo_redes_sociais li:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+
